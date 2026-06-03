@@ -1,15 +1,23 @@
-# Contribution [#]: [Issue Title]
+# Contribution 1: Add plain-English use cases to the README and docs landing page  
 
-**Contribution Number:** [1 / 2 / 3]  
-**Student:** [Your Name]  
-**Issue:** [GitHub issue link]  
-**Status:** [Phase I / Phase II / Phase III / Phase IV] [In Progress / Complete]
+**Contribution Number:** 1  
+**Student:** Christian Lee  
+**Issue:** https://github.com/seraph-quest/seraph/issues/211  
+**Status:** [Phase I] [Complete]
 
 ---
 
 ## Why I Chose This Issue
 
-[1-2 paragraphs explaining why this issue interests you, how it matches your skills/learning goals, what you hope to learn]
+I'm choosing Seraph GitHub Issue #211, titled "Add plain-English use cases to the README and docs landing page," because it's the simplest issue I could find that's still interesting to me. As someone just starting out in Open Source Software (OSS) development, I wanted to start with learning the basic fork-change-PR methodology that real OSS developers use in day-to-day workflows.
+
+In addition to getting to learn the ropes, I'm also interested in writing documentation to make software more approachable to first-time users. I've handled writing documentation in the form of cybersecurity writeups in school, so I believe this will be a great entry point for me.
+
+From reading the repository, I understand that this software, titled "Seraph," is an AI assistant tool designed to handle everyday tasks, increasing efficiency. The issue wants to add use cases for anyone using this software, in both the README and the documentation landing page, which can be found in docs/implementation/00-master-roadmap.md.
+
+From reading CONTRIBUTING.md, I understand that my pull requests should never target the develop or main branches directly, and should instead point toward a branch off of develop/feat or develop/fix. In my case, my PR will likely target the develop/fix branch, since my changes aim to fix an issue in the README and landing page, instead of adding an entirely new feature.
+
+As of now, the maintainer has not responded to my intro statement on the issue page, but the GitHub repo has seen activity since about three weeks ago, so I am somewhat confident that my changes will see some use, even if they are not ultimately merged into the main repository.
 
 ---
 
