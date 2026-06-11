@@ -25,19 +25,19 @@ As of now, the maintainer has not responded to my intro statement on the issue p
 
 ### Problem Description
 
-[In your own words, what's broken or missing?]
+"Seraph" is an AI assistant tool designed to handle everyday tasks, as described in the previous section. As such, it would be useful for users of this tool to know some basic use-cases upon starting it. However, such use cases are not present in the README or the documentation landing page, which are two of the most common places that users of this software are likely to visit. Knowing exactly what Seraph can and cannot do could prove invaluable for users who would like to integrate LLMs into their daily workflow.
 
 ### Expected Behavior
 
-[What should happen?]
+Upon cloning the repo to one's own machine, or otherwise visiting the Seraph repository, one should see basic use-cases in plain English demonstrating outcome-first operations that Seraph is able to provide to the user. Additionally, one can spin up the backend interface and visit the /docs endpoint to see the documentation landing page, and see the use-cases mirrored from the README.
 
 ### Current Behavior
 
-[What actually happens?]
+Upon cloning the repository, a user will not be able to see plain English use cases of the Seraph AI agent interface. The same can be said upon visiting the backend documentation landing page.
 
 ### Affected Components
 
-[Which parts of the codebase are involved?]
+This issue affects the main README.md file, as well as the docs/implementation/00-master-roadmap.md file, which is mirrored onto the backend documentation landing page.
 
 ---
 
@@ -45,13 +45,15 @@ As of now, the maintainer has not responded to my intro statement on the issue p
 
 ### Environment Setup
 
-[Notes on setting up your local development environment - challenges you faced, how you solved them]
+After cloning the repository, one should enable Git symlinks and place the folder outside of the OneDrive folder (if the user is running Windows).
 
 ### Steps to Reproduce
 
-1. [Step 1]
-2. [Step 2]
-3. [Observed result]
+1. Copy env.dev.example to .env.dev and configure with an OpenRouter API key.
+2. Build and launch with ./manage.sh -e dev up
+3. Visit frontend http://localhost:3000 to check that the frontend is accessible.
+4. Visit backend http://localhost:8004/docs to see the backend documentation landing page.
+5. Observe that the README.md and the docs landing page do not contain use cases of the Seraph AI agent in plain English.
 
 ### Reproduction Evidence
 
