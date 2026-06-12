@@ -37,7 +37,7 @@ Upon cloning the repository, a user will not be able to see plain English use ca
 
 ### Affected Components
 
-This issue affects the main README.md file, as well as the docs/implementation/00-master-roadmap.md file, which is mirrored onto the backend documentation landing page.
+To the best of my knowledge, this issue seems to affect the main README.md file, as well as the docs/implementation/00-master-roadmap.md file, since these both contain information about the Seraph AI agent in great detail, yet do not include plain-English use cases.
 
 ---
 
@@ -45,21 +45,22 @@ This issue affects the main README.md file, as well as the docs/implementation/0
 
 ### Environment Setup
 
-After cloning the repository, one should enable Git symlinks and place the folder outside of the OneDrive folder (if the user is running Windows).
+After cloning the repository, one should enable Git symlinks and place the folder outside of the OneDrive folder (if the user is running Windows). Additionally, one should install Docker Desktop for added convenience.
 
 ### Steps to Reproduce
 
 1. Copy env.dev.example to .env.dev and configure with an OpenRouter API key.
-2. Build and launch with ./manage.sh -e dev up
-3. Visit frontend http://localhost:3000 to check that the frontend is accessible.
-4. Visit backend http://localhost:8004/docs to see the backend documentation landing page.
-5. Observe that the README.md and the docs landing page do not contain use cases of the Seraph AI agent in plain English.
+2. Build by running ./manage.sh -e dev build on Git Bash.
+3. Launch by running ./manage.sh -e dev up -d on Git Bash.
+4. Visit frontend http://localhost:3000 to check that the frontend is accessible.
+5. Visit backend http://localhost:8004/docs to see the backend documentation landing page.
+6. Observe that the README.md and the docs landing page do not contain use cases of the Seraph AI agent in plain English.
 
 ### Reproduction Evidence
 
-- **Commit showing reproduction:** [Link to commit in your fork]
-- **Screenshots/logs:** [If applicable]
-- **My findings:** [What you discovered during reproduction]
+- **Commit showing reproduction:** A reproduction commit doesn't seem necessary, since my issue concerns itself with the absence of text from documentation. You can already see use cases absent from the current repository's README.md.
+- **Screenshots/logs:** https://imgur.com/a/9A8h38j
+- **My findings:** In this specific repo, the ./manage.sh script handles all the building, running, and log recording. Instead of navigating to specific log files in File Explorer, one can run ./manage.sh -e dev logs to view the log files and/or output them to a separate file for further analysis.
 
 ---
 
@@ -67,24 +68,25 @@ After cloning the repository, one should enable Git symlinks and place the folde
 
 ### Analysis
 
-[Your analysis of the root cause - what's causing the issue?]
+The root issue comes from the file hosting the backend server, backend/src/app.py, as well as the README.md file itself. The problem seems to come from the fact that, upon starting up the backend server, there is no "description" attribute to the FastAPI app.
 
 ### Proposed Solution
 
-[High-level description of your fix approach]
+In backend/src/app.py, in the lines that describe the FastAPI app definition, I will include an attribute named "description" containing a string that includes use cases for the Seraph AI agent. I will also mirror this list of plain-English use cases to the main README.md file, so that it is visible instantly upon viewing the repository. I will make sure these use cases are outcome-first, rather than architecture-first, as stated on the GitHub issue.
 
 ### Implementation Plan
 
 Using UMPIRE framework (adapted):
 
-**Understand:** [Restate the problem]
+**Understand:** Plain-English use cases are absent from the repository of the AI agent Seraph's README.md file, as well as the backend docs landing page.
 
-**Match:** [What similar patterns/solutions exist in the codebase?]
+**Match:** This is similar to a documentation-oriented problem, and involves me having to add resources or, in this case, use cases for an AI agent, that other users of the Seraph AI agent will find helpful.
 
 **Plan:** [Step-by-step implementation plan]
-1. [Modify file X to do Y]
-2. [Add function Z]
-3. [Update tests]
+1. Modify the file backend/src/app.py to include a description attribute that showcases use cases of the Seraph AI agent.
+2. Restart the backend docs landing page as necessary, and confirm that plain-English use cases appear at the top of the page, and are outcome-first, instead of architecture-first.
+3. Copy this list of use cases to the main README.md file.
+4. Confirm all tests succeed to ensure that nothing else has been broken.
 
 **Implement:** [Link to your branch/commits as you work]
 
