@@ -3,7 +3,7 @@
 **Contribution Number:** 1  
 **Student:** Christian Lee  
 **Issue:** https://github.com/seraph-quest/seraph/issues/211  
-**Status:** [Phase II] [In Progress]
+**Status:** [Phase III] [In Progress]
 
 ---
 
@@ -82,17 +82,17 @@ Using UMPIRE framework (adapted):
 
 **Match:** This is similar to a documentation-oriented problem, and involves me having to add resources or, in this case, use cases for an AI agent, that other users of the Seraph AI agent will find helpful.
 
-**Plan:** [Step-by-step implementation plan]
+**Plan:**
 1. Modify the file backend/src/app.py to include a description attribute that showcases use cases of the Seraph AI agent.
 2. Restart the backend docs landing page as necessary, and confirm that plain-English use cases appear at the top of the page, and are outcome-first, instead of architecture-first.
 3. Copy this list of use cases to the main README.md file.
 4. Confirm all tests succeed to ensure that nothing else has been broken.
 
-**Implement:** [Link to your branch/commits as you work]
+**Implement:** https://github.com/christianlee-dev/seraph/tree/docs/fix-use-cases
 
-**Review:** [Self-review checklist - does it follow the project's contribution guidelines?]
+**Review:** I have confirmed that this follows the CONTRIBUTING.md guidelines, making it so that my commit is on a branch off of develop, named fix/add-use-cases.
 
-**Evaluate:** [How will you verify it works?]
+**Evaluate:** I will restart the Seraph service and check the backend to see whether my list of use cases has been properly implemented and is visible. I will also evaluate whether everything else is working correctly, based on test cases.
 
 ---
 
