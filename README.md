@@ -117,9 +117,10 @@ Using UMPIRE framework (adapted):
 
 ## Implementation Notes
 
-### Week [X] Progress
+### Week 3 Progress
 
-[What you built this week, challenges faced, decisions made]
+- I wrote use cases in app.py and in README.md, and discovered that adding newlines using Python's triple-quoted strings causes the backend page to not load. To compensate, I put all the use cases on one line.
+- I merged the use cases described in the issue with ones that I was able to think of, and created a list that users should understand. I will likely iterate on this process over the following weeks.
 
 ### Week [Y] Progress
 
@@ -127,9 +128,9 @@ Using UMPIRE framework (adapted):
 
 ### Code Changes
 
-- **Files modified:** [List]
-- **Key commits:** [Links to important commits]
-- **Approach decisions:** [Why you chose certain approaches]
+- **Files modified:** backend/src/app.py, mcp-servers/http-request/server.py
+- **Key commits:** https://github.com/seraph-quest/seraph/commit/5ba33bfd02519cd4157737979f19d5657919bb3f
+- **Approach decisions:** I made slight changes to mcp-servers/http-request/server.py so that the app would load in the first place. According to FastMCP, some of the functions take different arguments, so I had to adjust some of the function calls as done in the commit above. Additionally, as stated in "Week 3 Progress," I put the uses cases on one line in src/app.py, so that the backend website would load properly.
 
 ---
 
