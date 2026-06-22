@@ -111,7 +111,9 @@ Using UMPIRE framework (adapted):
 
 ### Manual Testing
 
-[What you tested manually and results]
+- For manual testing, I spun up the website and physically looked at the header to ensure that use cases are included at the top of the docs page.
+- Additionally, I ensured each one was focused on outcomes.
+- I made sure this list was mirrored on the README.md, and that merging should be trivial, since these changes affect only two files in total.
 
 ---
 
@@ -122,9 +124,12 @@ Using UMPIRE framework (adapted):
 - I wrote use cases in app.py and in README.md, and discovered that adding newlines using Python's triple-quoted strings causes the backend page to not load. To compensate, I put all the use cases on one line.
 - I merged the use cases described in the issue with ones that I was able to think of, and created a list that users should understand. I will likely iterate on this process over the following weeks.
 
-### Week [Y] Progress
+### Week 4 Progress
 
-[Continue documenting as you work]
+- I continued to brainstorm various use cases that I did not cover last week, and started manual testing to ensure that my changes reflected successfully.
+- I am unsure if further testing is required, seeing that my changes need not be required by integration tests or unit tests. Furthermore, changing the list of use cases may cause tests to break if they depend on the content of said list, so it may be better to not add such.
+- Still, I will continue to brainstorm whether test cases are needed for this purpose and, if so, what kinds of tests should be required and implemented.
+- Regardless, this should be ready to open a pull request by the end of next week.
 
 ### Code Changes
 
