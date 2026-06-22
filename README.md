@@ -100,7 +100,7 @@ Using UMPIRE framework (adapted):
 
 ### Unit Tests
 
-- [ ] Test case 1: [Description]
+- [ ] Test case 1: This test case aims to ensure that adding use cases to the README.md and docs landing page should not "mess up" existing test cases. Currently in the process of brainstorming.
 - [ ] Test case 2: [Description]
 - [ ] Test case 3: [Description]
 
