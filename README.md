@@ -129,6 +129,7 @@ Using UMPIRE framework (adapted):
 - I continued to brainstorm various use cases that I did not cover last week, and started manual testing to ensure that my changes reflected successfully.
 - I am unsure if further testing is required, seeing that my changes need not be required by integration tests or unit tests. Furthermore, changing the list of use cases may cause tests to break if they depend on the content of said list, so it may be better to not add such.
 - Still, I will continue to brainstorm whether test cases are needed for this purpose and, if so, what kinds of tests should be required and implemented.
+- Most of the work done this week was figuring out how to run existing tests from the GitHub repo, as well as thinking about what behaviours should be tested in the first place. Not much hands-on file editing was done, unlike last week.
 - Regardless, this should be ready to open a pull request by the end of next week.
 
 ### Code Changes
