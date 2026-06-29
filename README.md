@@ -136,6 +136,7 @@ Using UMPIRE framework (adapted):
 
 - Unfortunately was not able to get much done today, had to debug Git related issues and figure out how to run existing test cases for integration purposes.
 - For this purpose, not much has been done on the codebase side, so my fork does not see changes just yet.
+- Arguably spent a lot of time figuring out how Git branches work and how to run the correct commands. Noting this down on skills learned and where to improve for next OSS contribution.
 - Regardless, was able to confirm that the problem (of no existing, visible test cases) has been successfully solved, and that, as of now, most if not all tests are successful.
 - Planning to remove my temporary changes in unrelated files to ensure that my PR remains as clean as possible, since there exists lingering code in my fork of the database that may not actually be necessary.
 - Drafted a preliminary PR description, but is largely unfinished. Planning to finish it by next week.
