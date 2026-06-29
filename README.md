@@ -3,7 +3,7 @@
 **Contribution Number:** 1  
 **Student:** Christian Lee  
 **Issue:** https://github.com/seraph-quest/seraph/issues/211  
-**Status:** [Phase III] [In Progress]
+**Status:** [Phase III] [Complete]
 
 ---
 
@@ -100,13 +100,13 @@ Using UMPIRE framework (adapted):
 
 ### Unit Tests
 
-- [ ] Test case 1: This test case aims to ensure that adding use cases to the README.md and docs landing page should not "mess up" existing test cases. Currently in the process of brainstorming.
+- [ ] Test case 1: This test case aims to ensure that adding use cases to the README.md and docs landing page should not "mess up" existing test cases. Successful.
 - [ ] Test case 2: [Description]
 - [ ] Test case 3: [Description]
 
 ### Integration Tests
 
-- [ ] Integration scenario 1
+- [ ] Integration scenario 1: Ensure all existing test cases pass successfully.
 - [ ] Integration scenario 2
 
 ### Manual Testing
@@ -131,6 +131,14 @@ Using UMPIRE framework (adapted):
 - Still, I will continue to brainstorm whether test cases are needed for this purpose and, if so, what kinds of tests should be required and implemented.
 - Most of the work done this week was figuring out how to run existing tests from the GitHub repo, as well as thinking about what behaviours should be tested in the first place. Not much hands-on file editing was done, unlike last week.
 - Regardless, this should be ready to open a pull request by the end of next week.
+
+### Week 5 Progress
+
+- Unfortunately was not able to get much done today, had to debug Git related issues and figure out how to run existing test cases for integration purposes.
+- For this purpose, not much has been done on the codebase side, so my fork does not see changes just yet.
+- Regardless, was able to confirm that the problem (of no existing, visible test cases) has been successfully solved, and that, as of now, most if not all tests are successful.
+- Planning to remove my temporary changes in unrelated files to ensure that my PR remains as clean as possible, since there exists lingering code in my fork of the database that may not actually be necessary.
+- Drafted a preliminary PR description, but is largely unfinished. Planning to finish it by next week.
 
 ### Code Changes
 
